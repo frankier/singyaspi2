@@ -1,0 +1,6 @@
+[submodule "yaspi"]
+	path = yaspi
+	url = https://github.com/albanie/yaspi.git
+[submodule "singreqrun"]
+	path = singreqrun
+	url = https://github.com/frankier/singreqrun.git
