@@ -1,4 +1,5 @@
-export SINGULARITYENV_SIF_PATH="$SIF_PATH"
+export SINGULARITYENV_RAY_SIF_PATH="$SIF_PATH"
+export RAY_SIF_PATH="$SIF_PATH"
 
 if [ -z "$YASPI_SRC" ]; then
     YASPI_SRC="sif"
