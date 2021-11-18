@@ -8,6 +8,7 @@
 #SBATCH --cpus-per-task={{cpus_per_task|ordeleteline}}
 {{sbatch_resources}}
 {{exclude_nodes}}
+{{custom_directives}}
 # -------------------------------
 
 # This script is a modification to the implementation suggest by gregSchwartz18 here:
