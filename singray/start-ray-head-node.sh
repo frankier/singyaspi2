@@ -10,7 +10,7 @@ echo "setting up environment for ray head node"
 # Launch the head node
 cmd="singularity exec \
     --nv $SING_EXTRA_ARGS $RAY_SIF_PATH \
-    ray start --head --redis-port=6379 --include-webui {{ray_args}}"
+    ray start --head --port=6379 {{ray_args}}"
 echo "running cmd: ${cmd}"
 eval $cmd
 
