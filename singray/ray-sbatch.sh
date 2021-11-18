@@ -64,7 +64,7 @@ if [ $worker_id -eq 0 ]; then
     cmd="singularity exec --env RAY_ADDRESS='$ip_head' --nv $SIF_PATH $SING_EXTRA_ARGS {{cmd}}"
     echo "Launching ${cmd} on head node in ${approx_ray_init_time_in_secs} secs"
     sleep ${approx_ray_init_time_in_secs}
-    {{cmd}}
+    eval $cmd
     echo "cancelling $SLURM_JOB_ID"
     scancel $SLURM_ARRAY_JOB_ID
 fi
