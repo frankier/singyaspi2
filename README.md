@@ -26,6 +26,9 @@ shown in **bold**:
    * **`$SIF_PATH`**: Path to Singularity SIF file within which both the
      head node and the execution of the worker nodes will occur on the
      cluster
+   * `$YASPI_SRC`: Where to get yaspi from. By default this is `sif` which will
+     download a Singularity image with yaspi in for you. You can also specify
+     `monolithic` if you have installed yaspi into your own SIF.
    * `SING_EXTRA_ARGS`: Extra arguments to pass to `singularity exec` and
      `singularity shell`. Most often you might use this to pass in extra
      `--bind` commands.
