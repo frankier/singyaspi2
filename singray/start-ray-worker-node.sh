@@ -5,7 +5,7 @@
 
 # parse the arguments
 PID=$$
-redis_address=$1
+address=$1
 worker_id=$2
 
 # Setup the environment for Ray
@@ -14,7 +14,7 @@ worker_id=$2
 # Launch the worker node
 cmd="singularity exec \
     --nv $SING_EXTRA_ARGS $RAY_SIF_PATH \
-    ray start --redis-address=${redis_address} {{ray_args}}"
+    ray start --address=${address} {{ray_args}}"
 echo "running cmd: ${cmd}"
 eval $cmd
 
